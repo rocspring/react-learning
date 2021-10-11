@@ -1,0 +1,12 @@
+node_modules
+dist/
+test
+build/
+.eslintrc.js
+package.json
+config-overrides.js
+types/
+public/
+dockerbuild/
+.vscode/
+commitlint.config.js
