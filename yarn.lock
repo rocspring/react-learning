@@ -8630,6 +8630,11 @@ mobx-react-lite@^3.2.0:
   resolved "https://registry.nlark.com/mobx-react-lite/download/mobx-react-lite-3.2.1.tgz#c549a3722f1eae51a78b12f839311614d5689c58"
   integrity sha1-xUmjci8erlGnixL4OTEWFNVonFg=
 
+mobx-react-router@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.npm.taobao.org/mobx-react-router/download/mobx-react-router-4.1.0.tgz#de014848207d8aa32f6a4e67ed861bd2cb6516e5"
+  integrity sha1-3gFISCB9iqMvak5n7YYb0stlFuU=
+
 mobx-react@^7.0.5:
   version "7.2.0"
   resolved "https://registry.nlark.com/mobx-react/download/mobx-react-7.2.0.tgz#241e925e963bb83a31d269f65f9f379e37ecbaeb"

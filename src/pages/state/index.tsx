@@ -1,0 +1,34 @@
+import React from 'react';
+import { Route, Switch } from 'react-router';
+import { BrowserRouter as Router, Link, useRouteMatch } from 'react-router-dom';
+
+import Demo1Page from './demo1/Parent';
+
+export default function StateIndexPage() {
+  let match = useRouteMatch();
+
+  return (
+    <Router>
+      <div>
+        <p>props page</p>
+        <nav>
+          <ul>
+            <li>
+              <Link to={`${match.url}/demo1`}>demo1</Link>
+            </li>
+            {/* <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/users">Users</Link>
+            </li> */}
+          </ul>
+        </nav>
+        <Switch>
+          <Route path={`${match.url}/demo1`} render={(props) => <Demo1Page {...props} />} />
+          {/* <Route path="/props" render={(props) => <PropsPage {...props} />} /> */}
+        </Switch>
+      </div>
+    </Router>
+  );
+}

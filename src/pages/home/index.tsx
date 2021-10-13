@@ -4,6 +4,9 @@ import { observer, inject } from 'mobx-react';
 
 import { BasicStore } from 'src/stores';
 
+// import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+
 interface Props {
   basicStore?: BasicStore;
 }
@@ -14,14 +17,20 @@ export default class HomePage extends Component<Props> {
   @observable private title: string = 'home page title';
 
   render() {
-    const { count } = this.props.basicStore;
-
     return (
-      <div>
-        <h2>{this.title}</h2>
-        <h2>{count}</h2>
-        <p>Home Page</p>
-      </div>
+      <nav>
+        <ul>
+          <li>
+            <Link to={`/props`}>props demo page</Link>
+          </li>
+          <li>
+            <Link to={`/state`}>state demo page</Link>
+          </li>
+          {/* <li>
+              <Link to="/users">Users</Link>
+            </li> */}
+        </ul>
+      </nav>
     );
   }
 }
