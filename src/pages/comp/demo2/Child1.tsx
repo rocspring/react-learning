@@ -17,10 +17,10 @@ export default class Child extends React.Component<any, any> {
     };
   }
 
-  static getDerivedStateFromProps(nextProps, prevState) {
-    console.log(TAG, 'getDerivedStateFromProps');
-    return null;
-  }
+  // static getDerivedStateFromProps(nextProps, prevState) {
+  //   console.log(TAG, 'getDerivedStateFromProps');
+  //   return null;
+  // }
 
   UNSAFE_componentWillMount() {
     console.log(TAG, 'UNSAFE_componentWillMount');
@@ -43,10 +43,10 @@ export default class Child extends React.Component<any, any> {
     return true;
   }
 
-  getSnapshotBeforeUpdate(prevProps, prevState) {
-    console.log(TAG, 'getSnapshotBeforeUpdate');
-    return null;
-  }
+  // getSnapshotBeforeUpdate(prevProps, prevState) {
+  //   console.log(TAG, 'getSnapshotBeforeUpdate');
+  //   return null;
+  // }
 
   componentDidUpdate(prevProps, prevState, snapshot) {
     console.log(TAG, 'componentDidUpdate');

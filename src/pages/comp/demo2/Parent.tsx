@@ -37,10 +37,10 @@ export default class Parent extends Component<any, any> {
    *
    * 返回值会作为新的 state 值与组件中之前的 state 进行合并
    */
-  static getDerivedStateFromProps(nextProps, prevState) {
-    console.log(TAG, 'getDerivedStateFromProps');
-    return null;
-  }
+  // static getDerivedStateFromProps(nextProps, prevState) {
+  //   console.log(TAG, 'getDerivedStateFromProps');
+  //   return null;
+  // }
 
   UNSAFE_componentWillMount() {
     console.log(TAG, 'UNSAFE_componentWillMount');
@@ -74,10 +74,10 @@ export default class Parent extends Component<any, any> {
   /**
    * 组将 render 之后，提交更新之前触发，返回值会作为 componentDidUpdate 的第三个参数传入
    */
-  getSnapshotBeforeUpdate(prevProps, prevState) {
-    console.log(TAG, 'getSnapshotBeforeUpdate');
-    return null;
-  }
+  // getSnapshotBeforeUpdate(prevProps, prevState) {
+  //   console.log(TAG, 'getSnapshotBeforeUpdate');
+  //   return null;
+  // }
 
   /**
    * 组件更新结束后触发

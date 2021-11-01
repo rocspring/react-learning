@@ -4,6 +4,7 @@ import React from 'react';
 interface Props {}
 
 const style = {
+  width: 500,
   padding: 40,
   margin: 20,
   border: '1px solid pink'
