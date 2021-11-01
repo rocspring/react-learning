@@ -7,6 +7,7 @@ import stores from 'src/stores';
 import HomePage from 'src/pages/home';
 import PropsPage from 'src/pages/props';
 import StatePage from 'src/pages/state';
+import CompPage from 'src/pages/comp';
 
 const browserHistory = createBrowserHistory();
 const history = syncHistoryWithStore(browserHistory, stores.routingStore);
@@ -22,6 +23,7 @@ const RouterConfig = () => {
           <Route path="/home" render={(props) => <HomePage {...props} />} />
           <Route path="/props" render={(props) => <PropsPage {...props} />} />
           <Route path="/state" render={(props) => <StatePage {...props} />} />
+          <Route path="/comp" render={(props) => <CompPage {...props} />} />
         </Switch>
       </div>
     </Router>

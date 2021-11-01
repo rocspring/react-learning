@@ -26,9 +26,9 @@ export default class HomePage extends Component<Props> {
           <li>
             <Link to={`/state`}>state demo page</Link>
           </li>
-          {/* <li>
-              <Link to="/users">Users</Link>
-            </li> */}
+          <li>
+            <Link to="/comp">组件和生命周期demo</Link>
+          </li>
         </ul>
       </nav>
     );
