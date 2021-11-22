@@ -1,6 +1,5 @@
 import { RouterStore } from 'mobx-react-router';
 
-// import AppService from '../services';
 import BasicStore from './basic';
 import LanguageStore from './language';
 

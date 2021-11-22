@@ -1,14 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
-import App from './App';
+// import App from './App';
+import ReduxApp from './ReduxApp/App';
 import reportWebVitals from './reportWebVitals';
 
 const rootEl = document.getElementById('root');
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    <ReduxApp />
   </React.StrictMode>,
   rootEl
 );

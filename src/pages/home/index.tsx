@@ -29,6 +29,9 @@ export default class HomePage extends Component<Props> {
           <li>
             <Link to="/comp">组件和生命周期demo</Link>
           </li>
+          <li>
+            <Link to="/data">数据管理</Link>
+          </li>
         </ul>
       </nav>
     );
